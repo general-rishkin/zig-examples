@@ -48,7 +48,4 @@ pub fn main() !void {
     
     std.debug.print("{} threads ready to race...\n", .{thread_count});
     context.sender();
-
-    
-
 }
