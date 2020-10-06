@@ -1,4 +1,4 @@
-// This is a Zig implementation is based on https://gist.github.com/mepcotterell/6f0a779befe388ab822764255e3776ae .
+// This is a Zig implementation of https://gist.github.com/mepcotterell/6f0a779befe388ab822764255e3776ae .
 
 const std = @import("std");
 
