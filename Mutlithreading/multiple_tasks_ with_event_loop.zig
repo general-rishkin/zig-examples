@@ -1,7 +1,7 @@
 const std = @import("std");
 const builtin = @import("builtin");
 
-// Using io_mode = .evented already creates its own event loop and you can get that instance using std.event.Loop.instance.?
+// Using io_mode = .evented already creates its own event loop and you can get that instance using std.event.Loop.instance.?.*
 pub const io_mode = .evented;
 
 var testRunDetachedData: usize = 0;
