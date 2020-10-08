@@ -2,11 +2,11 @@ const std = @import("std");
 const builtin = @import("builtin");
 
 // Using io_mode = .evented already creates its own event loop and you can get that instance using std.event.Loop.instance.?
-//pub const io_mode = .evented;
+pub const io_mode = .evented;
 
 var testRunDetachedData: usize = 0;
 pub fn main() !void {
-    var loop: std.event.Loop = undefined;
+    var loop: std.event.Loop = std.event.Loop.instance.?.*;
     try loop.initMultiThreaded();
     defer loop.deinit();
 
