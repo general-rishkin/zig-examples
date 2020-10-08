@@ -32,7 +32,7 @@ pub fn main() !void {
     std.testing.expect(testRunDetachedData == 1);
 }
 
-fn testRunDetached() callconv(.Async) void { 
+fn testRunDetached() void { 
     testRunDetachedData += 1; 
     std.debug.print("ThreadID = {} => \ttestRunDetachedData = {}\n", .{std.Thread.getCurrentId(), testRunDetachedData}); 
 }
